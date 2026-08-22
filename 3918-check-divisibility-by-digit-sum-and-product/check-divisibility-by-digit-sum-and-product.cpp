@@ -20,11 +20,6 @@ public:
     }
     bool checkDivisibility(int n) {
         int ans = sum(n)+product(n);
-        if(n%ans == 0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return ((n%ans == 0) ? true : false);
     }
 };
